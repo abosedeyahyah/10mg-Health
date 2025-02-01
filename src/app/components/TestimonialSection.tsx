@@ -45,7 +45,7 @@ const TestimonialSection = () => {
                 } text-center`}
               >
                 <p className="text-[#1D2939] font-Onest text-lg mb-8">
-                  "{testimonial.text}"
+                {testimonial.text}
                 </p>
                 <div className="flex flex-col items-center">
                   <h3 className="font-semibold">{testimonial.author}</h3>

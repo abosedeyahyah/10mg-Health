@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 const Footer = () => {
@@ -120,10 +121,12 @@ const Footer = () => {
         <div className="text-center md:text-left md:flex md:justify-start gap-10 mt-8">
           {/* Logo and Name */}
           <div className="flex items-center justify-center md:justify-start mb-4 md:mb-0">
-            <img
+            <Image
               src="/images/footerlogo.png"
               alt="10MG Health Logo"
               className="w-8 h-8 mr-2"
+              width={500}
+              height={500}
             />
             <span className="font-semibold text-lg">10MG Health</span>
           </div>

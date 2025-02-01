@@ -7,7 +7,7 @@ export default function Home() {
     <div className="min-h-screen flex flex-col">
       {/* Header */}
       <header className="">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 flex items-start justify-between py-4">
+        <div className="max-w-7xl mx-auto px-4 sm:px-0 flex items-center w-full justify-between py-4">
           <div className="flex items-start">
             <Image
               src="/images/Group.png"
