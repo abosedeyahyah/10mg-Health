@@ -1,6 +1,5 @@
 import Image from "next/image";
 import React from "react";
-// import { Button } from "@/components/ui/button";
 
 const Finance = () => {
   return (
@@ -42,7 +41,7 @@ const Finance = () => {
 
           <div className="h-full md:w-1/2 w-full">
             <Image
-              src="/images/FinanceImg.png" // Replace with the correct image path
+              src="/images/FinanceImg.png"
               alt="Affordable Medicines"
               width={500}
               height={500}
@@ -56,7 +55,7 @@ const Finance = () => {
         <div className="flex flex-col md:flex-row items-center md:h-[802px] w-full gap-6">
           <div className="h-full md:w-[40%] w-full">
             <Image
-              src="/images/financeImg2.png" // Replace with the correct image path
+              src="/images/financeImg2.png"
               alt="Reliable Financing"
               width={500}
               height={500}
@@ -104,7 +103,7 @@ const Finance = () => {
 
           <div className="h-full md:w-1/2 w-full">
             <Image
-              src="/images/FinanceImg3.png" // Replace with the correct image path
+              src="/images/FinanceImg3.png"
               alt="Affordable Medicines"
               width={500}
               height={500}
@@ -118,7 +117,7 @@ const Finance = () => {
         <div className="flex flex-col md:flex-row items-center md:h-[802px] w-full gap-6">
           <div className="h-full md:w-[40%] w-full">
             <Image
-              src="/images/FinanceImg1.png" // Replace with the correct image path
+              src="/images/FinanceImg1.png"
               alt="Affordable Medicines"
               width={500}
               height={500}
