@@ -1,154 +1,163 @@
-import Image from "next/image";
-import React from "react";
 
-const Footer = () => {
+import { FaTwitter, FaLinkedin, FaInstagram } from "react-icons/fa";
+
+export default function Footer() {
   return (
-    <footer className="bg-[#0A2540] text-white py-10">
-      <div className="px-4 md:px-8 lg:px-16">
-        {/* Footer Links */}
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 mb-8">
+    <footer className="bg-[#1866A7] text-white text-sm">
+      <div className="container mx-auto py-8 px-4">
+        {/* Top Section */}
+        <div className="grid grid-cols-1 md:grid-cols-7">
+          {/* Logo Section */}
+          <div className="col-span-2 flex flex-col items-start">
+            <div className="flex items-center mb-4">
+              <img
+                src="/images/footerlogo.png" // Replace with your logo path
+                alt="10mg Health"
+                className="h-10 w-auto"
+              />
+              <span className="ml-2 text-xl font-bold">10mg Health</span>
+            </div>
+          </div>
+
+          {/* Links Section */}
           <div>
-            <h3 className="font-bold text-lg mb-4">Company</h3>
-            <ul className="space-y-2">
+            <h3 className="font-bold mb-2">Our Company</h3>
+            <ul className="space-y-1">
               <li>
-                <a href="#" className="hover:underline">
-                  About us
+                <a href="#" className="hover:text-gray-300">
+                  Founder's Desk
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:underline">
-                  Contact Us
+                <a href="#" className="hover:text-gray-300">
+                  Our Story
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:underline">
-                  Our Company
+                <a href="#" className="hover:text-gray-300">
+                  Challenges
                 </a>
               </li>
             </ul>
           </div>
           <div>
-            <h3 className="font-bold text-lg mb-4">Resources</h3>
-            <ul className="space-y-2">
+            <h3 className="font-bold mb-2">Features</h3>
+            <ul className="space-y-1">
               <li>
-                <a href="#" className="hover:underline">
-                  Newsletter
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:underline">
-                  Help centre
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:underline">
-                  Tutorials
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div>
-            <h3 className="font-bold text-lg mb-4">Services</h3>
-            <ul className="space-y-2">
-              <li>
-                <a href="#" className="hover:underline">
-                  Vendors
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:underline">
-                  Lenders
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:underline">
+                <a href="#" className="hover:text-gray-300">
                   Suppliers
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:underline">
-                  Health Care Providers
+                <a href="#" className="hover:text-gray-300">
+                  Pharmacies
+                </a>
+              </li>
+              <li>
+                <a href="#" className="hover:text-gray-300">
+                  Vendors
                 </a>
               </li>
             </ul>
           </div>
           <div>
-            <h3 className="font-bold text-lg mb-4">Developers</h3>
-            <ul className="space-y-2">
+            <h3 className="font-bold mb-2">Developers</h3>
+            <ul className="space-y-1">
               <li>
-                <a href="#" className="hover:underline">
+                <a href="#" className="hover:text-gray-300">
                   API Documentation
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:underline">
+                <a href="#" className="hover:text-gray-300">
                   API Reference
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:underline">
+                <a href="#" className="hover:text-gray-300">
                   API Status
                 </a>
               </li>
             </ul>
           </div>
           <div>
-            <h3 className="font-bold text-lg mb-4">Docs</h3>
-            <ul className="space-y-2">
+            <h3 className="font-bold mb-2">Resources</h3>
+            <ul className="space-y-1">
               <li>
-                <a href="#" className="hover:underline">
-                  Terms & Condition
+                <a href="#" className="hover:text-gray-300">
+                  Blogs
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:underline">
-                  Privacy Policies
+                <a href="#" className="hover:text-gray-300">
+                  FAQs
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:underline">
+                <a href="#" className="hover:text-gray-300">
                   Cookies
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3 className="font-bold mb-2">Legal</h3>
+            <ul className="space-y-1">
+              <li>
+                <a href="#" className="hover:text-gray-300">
+                  Licenses
+                </a>
+              </li>
+              <li>
+                <a href="#" className="hover:text-gray-300">
+                  Privacy Policy
+                </a>
+              </li>
+              <li>
+                <a href="#" className="hover:text-gray-300">
+                  Cookie Policies
+                </a>
+              </li>
+              <li>
+                <a href="#" className="hover:text-gray-300">
+                  Terms and Conditions
                 </a>
               </li>
             </ul>
           </div>
         </div>
 
-        {/* Divider - Now Full Width */}
-        <div className="border-t-2 border-gray-700 w-full mx-0"></div>
+        {/* Divider */}
+        <hr className="border-t border-white/30 my-6" />
 
-        {/* Footer Bottom */}
-        <div className="text-center md:text-left md:flex md:justify-start gap-10 mt-8">
-          {/* Logo and Name */}
-          <div className="flex items-center justify-center md:justify-start mb-4 md:mb-0">
-            <Image
-              src="/images/footerlogo.png"
-              alt="10MG Health Logo"
-              className="w-8 h-8 mr-2"
-              width={500}
-              height={500}
-            />
-            <span className="font-semibold text-lg">10MG Health</span>
+        {/* Bottom Section */}
+        <div className="flex flex-col md:flex-row justify-between items-center">
+          <p>© 2024 10MG Pharmacy. All rights reserved.</p>
+          <div className="flex space-x-4 mt-4 md:mt-0">
+            <a
+              href="#"
+              aria-label="Twitter"
+              className="text-white hover:text-gray-300"
+            >
+              <FaTwitter size={20} />
+            </a>
+            <a
+              href="#"
+              aria-label="LinkedIn"
+              className="text-white hover:text-gray-300"
+            >
+              <FaLinkedin size={20} />
+            </a>
+            <a
+              href="#"
+              aria-label="Instagram"
+              className="text-white hover:text-gray-300"
+            >
+              <FaInstagram size={20} />
+            </a>
           </div>
-
-          {/* Legal Text */}
-          <p className="text-[#FFFF] text-sm font-Onest">
-            10MG is a financial technology platform, not a direct lender or
-            bank. Lending and financial services are provided by licensed
-            partners.
-            <br />
-            In Nigeria, 10MG operates through [Registered Partner Name],
-            regulated by the Central Bank of Nigeria (CBN). Registered address:
-            [Insert Address Here].
-            <br />
-            For other regions, 10MG partners with financial institutions
-            compliant with local regulations to provide secure and reliable
-            services.Copyright © 10MG 2024. All rights reserved.
-          </p>
         </div>
       </div>
     </footer>
   );
-};
-
-export default Footer;
+}
