@@ -1,4 +1,5 @@
 
+import Image from "next/image";
 import { FaTwitter, FaLinkedin, FaInstagram } from "react-icons/fa";
 
 export default function Footer() {
@@ -10,10 +11,12 @@ export default function Footer() {
           {/* Logo Section */}
           <div className="col-span-2 flex flex-col items-start">
             <div className="flex items-center mb-4">
-              <img
+              <Image
                 src="/images/footerlogo.png" // Replace with your logo path
                 alt="10mg Health"
                 className="h-10 w-auto"
+                width={500}
+                height={500}
               />
               <span className="ml-2 text-xl font-bold">10mg Health</span>
             </div>
@@ -25,7 +28,7 @@ export default function Footer() {
             <ul className="space-y-1">
               <li>
                 <a href="#" className="hover:text-gray-300">
-                  Founder's Desk
+                  Founder&apos;s Desk
                 </a>
               </li>
               <li>
