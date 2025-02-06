@@ -55,7 +55,7 @@ const Finance = () => {
         <div className="flex flex-col md:flex-row items-center md:h-[802px] w-full gap-6">
           <div className="h-full md:w-[40%] w-full">
             <Image
-              src="/images/financeImg2.png"
+              src="/images/FinanceImg2.png"
               alt="Reliable Financing"
               width={500}
               height={500}
